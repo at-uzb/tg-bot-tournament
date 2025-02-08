@@ -158,10 +158,13 @@ def generate_leaderboard():
         else: 
             leaderboard_text += f"🔴 {player.ljust(20)} {goals.rjust(3)} ⚽️\n"
     leaderboard_text += "\n⬆️🔄⬆️🔄⬆️🔄⬆️🔄⬆️🔄⬆️🔄\n"
-    if tournament_data["wish_list"]:
-        for player, ovr in tournament_data["wish_list"].items():
-            leaderboard_text += f"\n🟢 {player}   {ovr} OVR"
-
+    wish_list = list(tournament_data["wish_list"].items())
+    for i in range(5):
+        if i < len(wish_list):  
+            player, ovr = wish_list[i]
+        else:  
+            player, ovr = "Bo'sh o'rin", "***"
+        leaderboard_text += f"\n🟢 {player}   {ovr} OVR"
     #leaderboard_text += "</pre>"
     leaderboard_text += "⏳ 11 gacha o'yinchilar kengi turnirga 🇪🇺 avtomatik qo'shiladi.\n"
     leaderboard_text += "Qizildigilar 🔴 kengi turnirdan qolishadi.\n"
