@@ -140,7 +140,7 @@ def generate_leaderboard():
     
     # Generate the leaderboard text
     leaderboard_text = "🇪🇺 Turnir bo'yicha JADVAL 🇪🇺\n\n"
-    leaderboard_text += "<pre>"
+    #leaderboard_text += "<pre>"
     sn = 0 #space number needed
     for i, (player, data) in enumerate(sorted_players):
         rank = f"{i+1}️."
@@ -162,7 +162,7 @@ def generate_leaderboard():
         for player, ovr in tournament_data["wish_list"].items():
             leaderboard_text += f"\n🟢 {player}   {ovr} OVR"
 
-    leaderboard_text += "</pre>"
+    #leaderboard_text += "</pre>"
     leaderboard_text += "⏳ 11 gacha o'yinchilar kengi turnirga 🇪🇺 avtomatik qo'shiladi.\n"
     leaderboard_text += "Qizildigilar 🔴 kengi turnirdan qolishadi.\n"
     leaderboard_text += "Yashildigilar 🟢 ularni o'rnilariga o'tishadi 🔄.\n"
