@@ -160,7 +160,7 @@ def generate_leaderboard():
     leaderboard_text += "\n⬆️🔄⬆️🔄⬆️🔄⬆️🔄⬆️🔄⬆️🔄\n"
     if tournament_data["wish_list"]:
         for player, ovr in tournament_data["wish_list"].items():
-            leaderboard_text += f"\n🟢 {player}   {ovr} OVR\n"
+            leaderboard_text += f"\n🟢 {player}   {ovr} OVR"
 
     leaderboard_text += "</pre>"
     leaderboard_text += "⏳ 11 gacha o'yinchilar kengi turnirga 🇪🇺 avtomatik qo'shiladi.\n"
