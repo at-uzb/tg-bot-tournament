@@ -5,7 +5,7 @@ from aiogram.types import Message
 from aiogram.client.default import DefaultBotProperties
 
 # Replace 'YOUR_BOT_TOKEN' with your actual bot token
-API_TOKEN = '7701132151:AAGrwRMrtS1kzcmtxZepYmWpG10YcP4qbhA'
+API_TOKEN = ''
 
 # Initialize bot and dispatcher
 bot = Bot(token=API_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
